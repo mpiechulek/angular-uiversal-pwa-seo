@@ -3,13 +3,13 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
+    "start": "npm run serve:ssr",
+    "build": "npm run build:ssr",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "dev:ssr": "ng run seo:serve-ssr",
     "serve:ssr": "node dist/seo/server/main.js",
-    "build:ssr": "ng build && ng run seo:server",
+    "build:ssr": "ng build && ng run seo:server:production",
     "prerender": "ng run seo:prerender"
   },
   "private": true,
